@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  task:
+  tasks:
     - name: download transaction list
       block:
         - file:
