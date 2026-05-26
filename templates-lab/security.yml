@@ -11,7 +11,7 @@
     - name: Deploy sudo template
       template:
         src: hardened.j2
-        dest: /ect/sudoers.d/hardened
+        dest: /etc/sudoers.d/hardened
         mode: '0440'
         validate: /sbin/visudo -cf %s
 
